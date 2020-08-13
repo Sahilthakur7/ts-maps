@@ -1,4 +1,10 @@
 import { User } from "./User";
+import { Company } from "./Company";
 
-const user = new User();
-console.log("user", user);
+new google.maps.Map(document.getElementById("map"), {
+  zoom: 1,
+  center: {
+    lat: 20,
+    lng: 33,
+  },
+});

@@ -1,10 +1,11 @@
 import { User } from "./User";
 import { Company } from "./Company";
+import { CustomMap } from "./CustomMap";
 
-new google.maps.Map(document.getElementById("map"), {
-  zoom: 1,
-  center: {
-    lat: 20,
-    lng: 33,
-  },
-});
+const user = new User();
+const company = new Company();
+
+const newMap = new CustomMap("map");
+
+newMap.addMarker(user);
+newMap.addMarker(company);
